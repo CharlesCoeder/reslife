@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="z-[999]">
-      <nav className="bg-slate-200 fixed top-0 left-1/2 -translate-x-1/2 py-4">
+      <nav className="fixed top-0 left-1/2 -translate-x-1/2 py-4">
         <ul className="flex w-[28rem] justify-between items-center flex-wrap bg-nyit-orange rounded-full px-5 py-2">
           <Image
             src="/nyit_logo2.png"
