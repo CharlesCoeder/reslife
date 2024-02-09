@@ -9,10 +9,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-    colors: {
-      "nyit-orange": "#F7A604",
-      "nyit-blue-900": "#002C73",
-    },
     container: {
       center: true,
       padding: "2rem",
@@ -22,6 +18,8 @@ const config = {
     },
     extend: {
       colors: {
+        "nyit-orange": "#F7A604",
+        "nyit-blue-900": "#002C73",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
