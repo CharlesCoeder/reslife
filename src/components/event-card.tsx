@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "@/app/components/ui/card";
+} from "@/components/ui/card";
 import { sampleEvents } from "@/lib/sampleEvents";
 
 type EventCardProps = (typeof sampleEvents)[number];

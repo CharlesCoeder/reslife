@@ -1,6 +1,6 @@
 import React from "react";
-import EventsDisplay from "../components/events-display";
-import PageHeader from "../components/page-header";
+import EventsDisplay from "@/components/events-display";
+import PageHeader from "@/components/page-header";
 
 export default function Page() {
   return (
