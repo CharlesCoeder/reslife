@@ -8,6 +8,10 @@ export const headerData = [
     path: "/events",
   },
   {
+    name: "Chat",
+    path: "/chat",
+  },
+  {
     name: "Updates",
     path: "/updates",
   },
