@@ -2,7 +2,7 @@ import { createSupabaseServerClient } from "@/utils/supabase/server";
 import { NextResponse } from "next/server";
 import { userOnRoster } from "@/utils/supabase/roster";
 import { createUser } from "@/utils/supabase/createUser";
-import { userExists } from "@/utils/supabase/userExists";
+import { googleUserExists } from "@/utils/supabase/userExists";
 import { linkGoogleUID } from "@/utils/supabase/linkGoogleUID";
 
 export async function GET(request: Request) {
@@ -23,7 +23,7 @@ export async function GET(request: Request) {
 
     if (authUser && authUser.email) {
       const isOnRoster = await userOnRoster(authUser.email);
-      const existingUser = await userExists(authUser.email);
+      const existingUser = await googleUserExists(authUser.id);
 
       // User has logged in before, so proceed
       if (existingUser) {
