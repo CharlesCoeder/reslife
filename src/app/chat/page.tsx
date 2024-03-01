@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import ChatContainer from "./chat-container";
 
 export default function Chat() {
   return (
-    <div>Chat page</div>
-  )
+    <div className="flex justify-center">
+      <ChatContainer />
+    </div>
+  );
 }
